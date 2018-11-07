@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from jon barron */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+  </style>
+  <title>ReconNet</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+      <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="67%" valign="bottom">
+        <p align="center">
+          <name>ReconNet: Non-Iterative Reconstruction of Images from Compressively Sensed Measurements</name>
+        </p>
+<p align="center">
+          <name>CVPR 2016</name>
+        </p>
+       <p align=center>
+<a href="http://www.public.asu.edu/~kkulkar1/"> <font size="4"> Kuldeep Kulkarni </font></a> &nbsp &nbsp
+        <a href = ""><font size="4"> Suhas Lohit </font></a> &nbsp &nbsp
+	<a href = "http://www.public.asu.edu/~pturaga/"><font size="4"> Pavan Turaga </font></a> &nbsp &nbsp
+	<a href = "http://wp.optics.arizona.edu/trifimaging/trif-imaging-fellows/ronan-kerviche/"> <font size="4"> Ronan Kerviche </font> </a> &nbsp &nbsp
+	<a href = "http://fp.optics.arizona.edu/ashoka/HomeSite/Home.html"><font size="4"> Amit Ashok </font></a>  <br><br>
+        </p>
+<p align=center>
+<a href="http://www.asu.edu"> <font size="2"> Arizona State University</font></a> &nbsp and &nbsp
+        <a href = "http://www.arizona.edu"><font size="2">University of Arizona</font></a>  <br><br>
+        </p>
+        </tr>
+        
+      
+
+
+
+      
+      
+        
+       
+<table width="100%" height="1000" align="left" border="0" cellspacing="0" cellpadding="0">
+     
+          
+          <tr onmouseout="dt_stop()" onmouseover="dt_start()" >
+          <td valign = "top" width="400%" height="376" align="left">
+            
+            <div class="one">
+                <div class="two" id = 'dt_image'><img src='tiger_0_01.jpg' alt="" width="500%" height="232%"></div>
+                <img src='tiger_0_25.jpg' alt="" width="500%" height="232%">
+            </div>                
+            <script type="text/javascript">
+            function dt_start() {
+              document.getElementById('dt_image').style.opacity = "1";
+            }
+            function dt_stop() {
+              document.getElementById('dt_image').style.opacity = "0";
+            }
+            dt_stop()
+            </script>
+        </td>
+      </tr> 
+
+<tr>
+<td valign="top" width="100%" align= "center" height="30">
+              <p><a href="Kulkarni_ReconNet_Non-Iterative_Reconstruction_CVPR_2016_paper.pdf"><font size = "4"> Paper </font></a> &nbsp &nbsp
+                 <a href="Supplementary_reconnet.pdf"><font size = "4"> Supplementary </font></a> &nbsp &nbsp
+                 <a href="https://github.com/KuldeepKulkarni/ReconNet"><font size = "4"> Code </font></a> &nbsp &nbsp
+                 <a href="Poster_ICCP_2_final.pdf"><font size = "4"> ICCP 2016 poster </font></a> &nbsp &nbsp
+                 <a href="http://nuit-blanche.blogspot.com/2016/01/reconnet-non-iterative-reconstruction.html"><font size = "4"> Featured on Nuit Blanche </font></a> &nbsp &nbsp
+             </p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="100%" align= "left">
+              <p><strong> <font size = "4"> Abstract: </font> </strong> </p>
+The goal of this paper is to present a non-iterative and more importantly an extremely fast algorithm to reconstruct images from compressively sensed (CS) random measurements.  To this end, we propose a novel convolutional neural network (CNN) architecture which takes in CS measurements of an image as input and outputs  an intermediate  reconstruction.  We call this network, <em> ReconNet </em>. The intermediate reconstruction is fed into an off-the-shelf denoiser to obtain the final reconstructed image. On a standard dataset of images we show significant improvements in reconstruction results (both in terms of PSNR and time complexity) over state-of-the-art iterative CS reconstruction algorithms at various measurement rates. Further, through qualitative experiments on real data collected using our block single pixel camera (SPC), we show that our network is highly robust to sensor noise and can recover visually better quality images than competitive algorithms at extremely low sensing rates of 0.1 and 0.04. To demonstrate that our algorithm can recover semantically informative images even at a low measurement rate of 0.01, we present a very robust proof of concept real-time visual tracking application.   
+             
+              
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="100%" align= "left">
+              <p><strong> <font size = "4">  Citation (BibTex): </font> </strong> </p> 
+<pre class="bibtex">
+@InProceedings{Kulkarni_2016_CVPR,
+author = {Kulkarni, Kuldeep and Lohit, Suhas and Turaga, Pavan and Kerviche, Ronan and Ashok, Amit},
+title = {ReconNet: Non-Iterative Reconstruction of Images From Compressively Sensed Measurements},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2016}
+} 
+</pre>              
+             
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="100%" align="left">
+<p><strong><font size ="4"> Contact: </font> </strong> </p>
+Kuldeep Kulkarni, kkulkar1 “at” asu “dot” edu
+</tr>
+</td>
+
+<tr>
+<td valign="top" width="100%" align= "left">
+              <p><strong> <font size = "4">  Acknowledgments: </font> </strong> </p>  
+The work of KK, SL, and PT was supported by ONR
+Grant N00014-12-1-0124 sub-award Z868302. We thank
+Charles Collins for installing Caffe, and the anonymous reviewers,
+Rushil Anirudh, Suren Jayasuriya and Arjun Jauhari for
+their valuable suggestions.   
+        
+             
+
+</td>
+</tr>
+
+</table>
+
+
+
+        
+        
+       
+  </body>
+</html>

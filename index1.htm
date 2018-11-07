@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from jon barron */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/jpg" href="Arizona_State_Sun_Devils7.jpg">
+  <title>Kuldeep Kulkarni</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  </head>
+
+
+<body>
+	<a href="https://github.com/akar43/CategoryShapes"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+	<div class="pageTitle">
+	ReconNet: Non-Iterative Reconstruction of Images from Compressively Sensed Measurements<br>
+    <span class = "pageSubTitle"> CVPR 2016</span><br><br>
+	<span class = "Authors">
+	<a href="http://www.public.asu.edu/~kkulkar1/"> Kuldeep Kulkarni</a> &nbsp &nbsp
+        <a href = "">Suhas Lohit</a> &nbsp &nbsp
+	<a href = "http://www.public.asu.edu/~pturaga/">Pavan Turaga</a> &nbsp &nbsp
+	<a href = ""> Ronan Kerviche </a> &nbsp &nbsp
+	<a href = "http://fp.optics.arizona.edu/ashoka/HomeSite/Home.html"> Amit Ashok</a> <br><br>	
+	<a href = "www.asu.edu"> Arizona State University, Tempe, AZ </a> and <a href = "www.arizona.edu"> University of Arizona, Tucson, AZ </a> 
+	</span>
+	</div>
+
+
+	<img class = "bannerImage" src="images/teaser.png">
+	<div class = "abstractTitle">
+	Abstract
+	</div>
+	<p class = "abstractText">
+	The goal of this paper is to present a non-iterative and more importantly an extremely fast algorithm to reconstruct images from compressively sensed (CS) random measurements. To this end, we propose a novel convolutional neural network (CNN) architecture which takes in CS measurements of an image as input and outputs an intermediate reconstruction. We call this network, ReconNet . The intermediate reconstruction is fed into an off-the-shelf denoiser to obtain the final reconstructed image. On a standard dataset of images we show significant improvements in reconstruction results (both in terms of PSNR and time complexity) over state-of-the-art iterative CS reconstruction algorithms at various measurement rates. Further, through qualitative experiments on real data collected using our block single pixel camera (SPC), we show that our network is highly robust to sensor noise and can recover visually better quality images than competitive algorithms at extremely low sensing rates of 0.1 and 0.04. To demonstrate that our algorithm can recover semantically informative images even at a low measurement rate of 0.01, we present a very robust proof of concept real-time visual tracking application. 
+	</p>
+		<div class = "material">
+					<a href="Kulkarni_ReconNet_Non-Iterative_Reconstruction_CVPR_2016_paper.pdf">[PDF]</a>
+					<a href="supplementary_reconnet.pdf">[Supplementary Material]</a>
+					<a href="Poster_ICCP_2_final.pdf">[ICCP 2016 Poster]</a>
+			                <a href="https://github.com/akar43/CategoryShapes">[Code]</a>
+					<a href="javascript:togglevis('cvpr16')" id = "cvpr16a">[Bibtex]</a>
+					<div style="display:none; margin-left:200px" id="cvpr16", align="left">
+						<pre class="bibtex">
+							@InProceedings{Kulkarni_2016_CVPR,
+author = {Kulkarni, Kuldeep and Lohit, Suhas and Turaga, Pavan and Kerviche, Ronan and Ashok, Amit},
+title = {ReconNet: Non-Iterative Reconstruction of Images From Compressively Sensed Measurements},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2016}
+} 
+				        </pre>
+					</div>
+		</div>
+	
+	<div class = "abstractTitle">
+	Learnt Shapes
+	</div>	
+	<div class = "video">
+	<table width="600px" border="0" align="center">
+	<tr>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/aeroplane_AllTrain.gif">
+	<p class = "paratextcenter">aeroplane</p>
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/bicycle_AllTrain.gif">
+	<p class = "paratextcenter">bicycle</p>
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/boat_AllTrain.gif">
+	<p class = "paratextcenter">boat</p>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/bus_AllTrain.gif">
+	<p class = "paratextcenter">bus</p>
+
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/car_AllTrain.gif">
+	<p class = "paratextcenter">car</p>
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/chair_AllTrain.gif">
+	<p class = "paratextcenter">chair</p>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/motorbike_AllTrain.gif">
+	<p class = "paratextcenter">motorbike</p>
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/train_AllTrain.gif">
+	<p class = "paratextcenter">train</p>
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/tvmonitor_AllTrain.gif">
+	<p class = "paratextcenter">tvmonitor</p>
+	</td>
+	</tr>
+	</table>
+	
+	</div>
+
+	<div class = "abstractTitle">
+	Videos
+	</div>	
+	<div class = "video">
+        <iframe width="720" height="405" src="https://www.youtube.com/embed/5XDwkazszRE" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="ackTitle">
+	Acknowledgements
+	</div>
+
+	<p class = "ackText">
+	The work of Kuldeep Kulkarni, Suhas Lohit, and Pavan Turaga was supported by ONR
+Grant N00014-12-1-0124 sub-award Z868302. We thank
+Charles Collins for installing Caffe, the anonymous reviewers,
+Rushil Anirudh, Suren Jayasuriya and Arjun Jauhari for
+their valuable suggestions.
+
+	</p>
+</body>

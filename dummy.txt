@@ -1,0 +1,19 @@
+
+<table width="100%" align="center" border="1" cellspacing="0" cellpadding="20">
+       <tr>     
+              <td valign="top" width="30%">
+              <p><a href="reconnet.pdf">
+        <papertitle>ReconNet: Non-Iterative Reconstruction of Images from Compressively Sensed Random Measurements</papertitle></a><br>
+        <strong>Kuldeep Kulkarni</strong>, <strong>Suhas Lohit</strong>, <a href="http://www.public.asu.edu/~pturaga/Welcome.html">Pavan Turaga</a>, <strong>Ronan Kerviche</strong>, <a href="http://www2.engr.arizona.edu/~ashoka/ECE_Home_Site/Home.html">Amit Ashok</a> <br>
+                <em><a href = "http://arxiv.org/abs/1601.06892">arXiv:1601.06892 [cs.CV]</a></em> <font color="red"><strong>(Accepted at CVPR 2016)</strong></font>
+                <br>
+                <a href="index1.htm">code+caffe models+supplement - coming soon</a>
+                <br>
+               <br>
+               This work was covered by <a href="http://nuit-blanche.blogspot.com/2016/01/reconnet-non-iterative-reconstruction.html"><strong>'Nuit Blanche'</strong></a>
+              <p></p>
+              <p>The goal of this paper is to present a non-iterative and more importantly an extremely fast algorithm to reconstruct images from compressively sensed (CS) random measurements.  To this end, we propose a novel convolutional neural network (CNN) architecture which takes in CS measurements of an image as input and outputs  an intermediate  reconstruction.  We call this network, <em> ReconNet </em>. The intermediate reconstruction is fed into an off-the-shelf denoiser to obtain the final reconstructed image. On a standard dataset of images we show significant improvements in reconstruction results (both in terms of PSNR and time complexity) over state-of-the-art iterative CS reconstruction algorithms at various measurement rates. Further, through qualitative experiments on real data collected using our block single pixel camera (SPC), we show that our network is highly robust to sensor noise and can recover visually better quality images than competitive algorithms at extremely low sensing rates of 0.1 and 0.04. To demonstrate that our algorithm can recover semantically informative images even at a low measurement rate of 0.01, we present a very robust proof of concept real-time visual tracking application.  
+              <p></p>
+              </a></p>
+              </td>
+            </tr>
