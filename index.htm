@@ -94,9 +94,67 @@
       </tr>
       </table>
       <table width="120%" align="center" border="0" cellspacing="0" cellpadding="20">
+      
+      <tr onmouseout="dt_stop()" onmouseover="dt_start()" >
+          <td valign = "top" width="30%">
+            
+            <div class="one">
+                <div class="two" id = 'dt_image'><img src='nucl_norm.jpg' alt="" width="160%" height="60%"></div>
+                <img src='nucl_norm.jpg' alt="" width="160%" height="60%">
+            </div>                
+            <script type="text/javascript">
+            function dt_start() {
+              document.getElementById('dt_image').style.opacity = "1";
+            }
+            function dt_stop() {
+              document.getElementById('dt_image').style.opacity = "0";
+            }
+            dt_stop()
+            </script>
+            
+              </td>
+              <td valign="top" width="75%">
+              <p><a href="https://ieeexplore.ieee.org/document/8379450/">
+        <papertitle>Convolutional Neural Networks for Non-iterative Reconstruction of Compressively Sensed Images</papertitle></a><br>
+        Suhas Lohit, <strong>Kuldeep Kulkarni</strong>, Ronan Kerviche, Pavan Turaga, Amit Ashok<br>
+                <em> IEEE Transactions on Computational Imaging, 2018</em><br>
+              <p></p>
+              </a></p>
+              </td>
+            </tr>
         
-
-
+        
+      <tr onmouseout="dt_stop()" onmouseover="dt_start()" >
+          <td valign = "top" width="30%">
+            
+            <div class="one">
+                <div class="two" id = 'dt_image'><img src='nucl_norm.jpg' alt="" width="160%" height="60%"></div>
+                <img src='nucl_norm.jpg' alt="" width="160%" height="60%">
+            </div>                
+            <script type="text/javascript">
+            function dt_start() {
+              document.getElementById('dt_image').style.opacity = "1";
+            }
+            function dt_stop() {
+              document.getElementById('dt_image').style.opacity = "0";
+            }
+            dt_stop()
+            </script>
+            
+              </td>
+              <td valign="top" width="75%">
+              <p><a href="wslhc.pdf">
+        <papertitle>Weakly Supervised Learning of Heterogeneous Concepts in Videos</papertitle></a><br>
+        Sohil Shah,<strong>Kuldeep Kulkarni</strong>, Arijit Biswas, Ankit Gandhi, Om Deshmukh, Larry Davis<br>
+                <em> European Conference on Computer Vision (ECCV), 2016</em><br>
+              <p></p>
+              </a></p>
+              </td>
+            </tr>
+       
+        
+        
+        
        <tr onmouseout="dt_stop()" onmouseover="dt_start()" >
           <td valign = "top" width="30%">
             
@@ -121,7 +179,7 @@
         <strong>Kuldeep Kulkarni</strong>, <a href="https://www.linkedin.com/in/suhaslohit">Suhas Lohit</a>, <a href="http://www.public.asu.edu/~pturaga/Welcome.html">Pavan Turaga</a>, <a href="http://wp.optics.arizona.edu/trifimaging/trif-imaging-fellows/ronan-kerviche/"<strong>Ronan Kerviche</strong></a>, <a href="http://www2.engr.arizona.edu/~ashoka/ECE_Home_Site/Home.html">Amit Ashok</a> <br>
          <em>The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016</a></em>
                 <br>
-                <a href="reconnet.htm">Project Page</a> (Code available now).
+                <a href="reconnet.htm">Project Page</a> (Code available).
                 <br>
                <br>
                This work was covered by <a href="http://nuit-blanche.blogspot.com/2016/01/reconnet-non-iterative-reconstruction.html"><strong>'Nuit Blanche'</strong></a>
@@ -189,9 +247,6 @@
         </td>
       </tr>
 
-
-
-
 <tr onmouseout="ccc_stop()" onmouseover="ccc_start()" >
               <td valign="top" width="30%">
 
@@ -217,39 +272,7 @@
          <a href="http://ollie-imac.cs.northwestern.edu/~ollie/CCD2015/"><em>4th IEEE Workshop on Computational Cameras and Displays (CCD)</a>, held in conjunction with IEEE CVPR, June 2015</em> <font color="red"><strong>(Best Paper Award)</strong></font><br>        
 <a href="CCDppt.pptx">Presentation</a>      
        <p></p>
-        <p>Spatial-multiplexing cameras have emerged as a promising
-alternative to classical imaging devices, often enabling
-acquisition of "more for less". One popular architecture for
-spatial multiplexing is the single-pixel camera (SPC), which
-acquires coded measurements of the scene with pseudorandom
-spatial masks. Significant theoretical developments
-over the past few years provide a means for reconstruction
-of the original imagery from coded measurements at sub-
-Nyquist sampling rates. Yet, accurate reconstruction generally
-requires high measurement rates and high signal-tonoise
-ratios. In this paper, we enquire if one can perform
-high-level visual inference problems (e.g. face recognition
-or action recognition) from compressive cameras without
-the need for image reconstruction. This is an interesting
-question since in many practical scenarios, our goals extend
-beyond image reconstruction. However, most inference
-tasks often require non-linear features and it is not clear
-how to extract such features directly from compressed measurements.
-In this paper, we show that one can extract nontrivial
-correlational features directly without reconstruction
-of the imagery. As a specific example, we consider the problem
-of face recognition beyond the visible spectrum e.g in
-the short-wave infra-red region (SWIR), where pixels are
-expensive. We base our framework on smashed filters which
-suggests that inner-products between high-dimensional signals
-can be computed in the compressive domain to a high
-degree of accuracy. We collect a new face image dataset
-of 30 subjects, obtained using an SPC. Using face recognition
-as an example, we show that one can indeed perform
-reconstruction-free inference with a very small loss of accuracy
-at very high compression ratios of 100 and more.
-        <p></p>
-        </a></p>
+       </a></p>
         </td>
       </tr>
 
@@ -276,8 +299,6 @@ at very high compression ratios of 100 and more.
   <papertitle>Recurrence Textures for Activity Recognition from compressive cameras</papertitle></a><br>
           <strong>Kuldeep Kulkarni</strong>, <a href="https://pavanturaga.com">Pavan Turaga </a><br>
           <em>IEEE International Conference on Image Processing, 2012</em> <br>        
-        <p></p>
-<p>Recent advances in camera architectures and associated mathematical representations now enable compressive acquisition of images and videos at low data-rates. In such a setting, we consider the problem of human activity recognition, which is an important inference problem in many security and surveillance applications. We propose a framework for understanding human activities as a non-linear dynamical system, and propose a robust, generalizable feature that can be extracted directly from the compressed measurements without recon-structing the original video frames. The proposed feature is termed recurrence texture and is motivated from recurrence analysis of non-linear dynamical systems. We show that it is possible to obtain discriminative features directly from the compressed stream and show its utility in recognition of activities at very low data rates.
         <p></p>
         </a></p>
         </td>
