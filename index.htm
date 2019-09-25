@@ -126,8 +126,6 @@
                <br>
                This work was covered by <a href="http://nuit-blanche.blogspot.com/2016/01/reconnet-non-iterative-reconstruction.html"><strong>'Nuit Blanche'</strong></a>
               <p></p>
-              <p>The goal of this paper is to present a non-iterative and more importantly an extremely fast algorithm to reconstruct images from compressively sensed (CS) random measurements.  To this end, we propose a novel convolutional neural network (CNN) architecture which takes in CS measurements of an image as input and outputs  an intermediate  reconstruction.  We call this network, <em> ReconNet </em>. The intermediate reconstruction is fed into an off-the-shelf denoiser to obtain the final reconstructed image. On a standard dataset of images we show significant improvements in reconstruction results (both in terms of PSNR and time complexity) over state-of-the-art iterative CS reconstruction algorithms at various measurement rates. Further, through qualitative experiments on real data collected using our block single pixel camera (SPC), we show that our network is highly robust to sensor noise and can recover visually better quality images than competitive algorithms at extremely low sensing rates of 0.1 and 0.04. To demonstrate that our algorithm can recover semantically informative images even at a low measurement rate of 0.01, we present a very robust proof of concept real-time visual tracking application.  
-              <p></p>
               </a></p>
               </td>
             </tr>
@@ -155,10 +153,8 @@
               <p><a href="pami_integral_image_submission.pdf">
         <papertitle>Fast Integral Image Estimation at 1% measurement rate</papertitle></a><br>
         <strong>Kuldeep Kulkarni</strong>, <a href="https://pavanturaga.com">Pavan Turaga</a><br>
-                <em> under revisions at IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) </em>, 2016<br>
+                <em> under revisions at IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) </em><br>
                 <em><a href = "http://arxiv.org/abs/1601.07258">arXiv:1601.07258 [cs.CV] </a></em>
-              <p></p>
-              <p>We propose a framework called <em> ReFInE </em> to directly obtain integral image estimates from a very small number of spatially multiplexed measurements of the scene without iterative reconstruction of any auxiliary image, and demonstrate their practical utility in visual object tracking. Specifically, we design measurement matrices which are tailored to facilitate extremely fast estimation of the integral image, by using a single-shot linear operation on the measured vector. Leveraging a prior model for the images, we formulate a nuclear norm minimization problem with second order conic constraints to jointly obtain the measurement matrix and the linear operator. Through qualitative and quantitative experiments, we show that high quality integral image estimates can be obtained using our framework at very low measurement rates. Further, on a standard dataset of 50 videos, we present object tracking results which are comparable to the state-of-the-art methods, even at an extremely low measurement rate of 1%.
               <p></p>
               </a></p>
               </td>
@@ -188,8 +184,6 @@
           <strong>Kuldeep Kulkarni</strong>, <a href="http://www.public.asu.edu/~pturaga/Welcome.html">Pavan Turaga</a><br>
          <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>(Impact factor: 5.781, <font color="red"><strong>Accepted on July 31, 2015</strong></font>)<br>
 <a href="supplementary_stsf.pdf">supplement</a> / <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7208864&tag=1">preprint</a> 
-        <p></p>
-        <p>	Persistent surveillance from camera networks, such as at parking lots, UAVs, etc., often results in large amounts of video data, resulting in significant challenges for inference in terms of storage, communication and computation. Compressive cameras have emerged as a potential solution to deal with the data deluge issues in such applications. However, inference tasks such as action recognition require high quality features which implies reconstructing the original video data. Much work in compressive sensing (CS) theory is geared towards solving the reconstruction problem, where state-of-the-art methods are computationally intensive and provide low-quality results at high compression rates. Thus, reconstruction-free methods for inference are much desired. In this paper, we propose reconstruction-free methods for action recognition from compressive cameras at high compression ratios of 100 and above.  Recognizing actions directly from CS measurements requires features which are mostly nonlinear and thus not easily applicable. This leads us to search for such properties that are preserved in compressive measurements. To this end, we propose the use of spatio-temporal smashed filters, which are compressive domain versions of pixel-domain matched filters. We conduct experiments on publicly available databases  and show that one can obtain recognition rates that are comparable to the oracle method in uncompressed setup, even for high compression ratios.
         <p></p>
         </a></p>
         </td>
