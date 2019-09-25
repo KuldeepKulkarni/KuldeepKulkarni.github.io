@@ -94,63 +94,94 @@
       </tr>
       </table>
       <table width="120%" align="center" border="0" cellspacing="0" cellpadding="20">
+        
+
+
+       <tr onmouseout="dt_stop()" onmouseover="dt_start()" >
+          <td valign = "top" width="30%">
+            
+            <div class="one">
+                <div class="two" id = 'dt_image'><img src='tiger_0_01.jpg' alt="" width="180%" height="110%"></div>
+                <img src='tiger_0_25.jpg' alt="" width="180%" height="110%">
+            </div>                
+            <script type="text/javascript">
+            function dt_start() {
+              document.getElementById('dt_image').style.opacity = "1";
+            }
+            function dt_stop() {
+              document.getElementById('dt_image').style.opacity = "0";
+            }
+            dt_stop()
+            </script>
       
-
-              <td valign="top" width="75%">
-              <p><a href="https://ieeexplore.ieee.org/document/8379450/">
-        <papertitle>Convolutional Neural Networks for Non-iterative Reconstruction of Compressively Sensed Images</papertitle></a><br>
-        Suhas Lohit, <strong>Kuldeep Kulkarni</strong>, Ronan Kerviche, Pavan Turaga, Amit Ashok<br>
-                <em> IEEE Transactions on Computational Imaging, 2018</em><br>
-              <p></p>
-              </a></p>
               </td>
-     
-        
-        
-
-              <td valign="top" width="75%">
-              <p><a href="wslhc.pdf">
-        <papertitle>Weakly Supervised Learning of Heterogeneous Concepts in Videos</papertitle></a><br>
-        Sohil Shah,<strong>Kuldeep Kulkarni</strong>, Arijit Biswas, Ankit Gandhi, Om Deshmukh, Larry Davis<br>
-                <em> European Conference on Computer Vision (ECCV), 2016</em><br>
-              <p></p>
-              </a></p>
-              </td>
- 
-       
-        
-        
-        
-       
               <td valign="top" width="100%">
               <p><a href="Kulkarni_ReconNet_Non-Iterative_Reconstruction_CVPR_2016_paper.pdf">
         <papertitle>ReconNet: Non-Iterative Reconstruction of Images from Compressively Sensed Measurements</papertitle></a><br>
         <strong>Kuldeep Kulkarni</strong>, <a href="https://www.linkedin.com/in/suhaslohit">Suhas Lohit</a>, <a href="http://www.public.asu.edu/~pturaga/Welcome.html">Pavan Turaga</a>, <a href="http://wp.optics.arizona.edu/trifimaging/trif-imaging-fellows/ronan-kerviche/"<strong>Ronan Kerviche</strong></a>, <a href="http://www2.engr.arizona.edu/~ashoka/ECE_Home_Site/Home.html">Amit Ashok</a> <br>
          <em>The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016</a></em>
                 <br>
-                <a href="reconnet.htm">Project Page</a> (Code available).
+                <a href="reconnet.htm">Project Page</a> (Code available now).
                 <br>
                <br>
                This work was covered by <a href="http://nuit-blanche.blogspot.com/2016/01/reconnet-non-iterative-reconstruction.html"><strong>'Nuit Blanche'</strong></a>
               <p></p>
+              <p>The goal of this paper is to present a non-iterative and more importantly an extremely fast algorithm to reconstruct images from compressively sensed (CS) random measurements.  To this end, we propose a novel convolutional neural network (CNN) architecture which takes in CS measurements of an image as input and outputs  an intermediate  reconstruction.  We call this network, <em> ReconNet </em>. The intermediate reconstruction is fed into an off-the-shelf denoiser to obtain the final reconstructed image. On a standard dataset of images we show significant improvements in reconstruction results (both in terms of PSNR and time complexity) over state-of-the-art iterative CS reconstruction algorithms at various measurement rates. Further, through qualitative experiments on real data collected using our block single pixel camera (SPC), we show that our network is highly robust to sensor noise and can recover visually better quality images than competitive algorithms at extremely low sensing rates of 0.1 and 0.04. To demonstrate that our algorithm can recover semantically informative images even at a low measurement rate of 0.01, we present a very robust proof of concept real-time visual tracking application.  
+              <p></p>
               </a></p>
               </td>
-
+            </tr>
         
         
-        
+        <tr onmouseout="dt_stop()" onmouseover="dt_start()" >
+          <td valign = "top" width="30%">
+            
+            <div class="one">
+                <div class="two" id = 'dt_image'><img src='nucl_norm.jpg' alt="" width="160%" height="60%"></div>
+                <img src='nucl_norm.jpg' alt="" width="160%" height="60%">
+            </div>                
+            <script type="text/javascript">
+            function dt_start() {
+              document.getElementById('dt_image').style.opacity = "1";
+            }
+            function dt_stop() {
+              document.getElementById('dt_image').style.opacity = "0";
+            }
+            dt_stop()
+            </script>
+            
+              </td>
               <td valign="top" width="75%">
               <p><a href="pami_integral_image_submission.pdf">
         <papertitle>Fast Integral Image Estimation at 1% measurement rate</papertitle></a><br>
         <strong>Kuldeep Kulkarni</strong>, <a href="https://pavanturaga.com">Pavan Turaga</a><br>
-                <em> under revisions at IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) </em><br>
+                <em> under revisions at IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) </em>, 2016<br>
                 <em><a href = "http://arxiv.org/abs/1601.07258">arXiv:1601.07258 [cs.CV] </a></em>
+              <p></p>
+              <p>We propose a framework called <em> ReFInE </em> to directly obtain integral image estimates from a very small number of spatially multiplexed measurements of the scene without iterative reconstruction of any auxiliary image, and demonstrate their practical utility in visual object tracking. Specifically, we design measurement matrices which are tailored to facilitate extremely fast estimation of the integral image, by using a single-shot linear operation on the measured vector. Leveraging a prior model for the images, we formulate a nuclear norm minimization problem with second order conic constraints to jointly obtain the measurement matrix and the linear operator. Through qualitative and quantitative experiments, we show that high quality integral image estimates can be obtained using our framework at very low measurement rates. Further, on a standard dataset of 50 videos, we present object tracking results which are comparable to the state-of-the-art methods, even at an extremely low measurement rate of 1%.
               <p></p>
               </a></p>
               </td>
-
+            </tr>
    
-            
+            <tr onmouseout="ccc_stop()" onmouseover="ccc_start()" >
+              <td valign="top" width="30%">
+
+                <div class="one">
+                    <div class="two" id = 'ccc_image'><img src='action_loc_ucf50.jpg' alt="" width="165%" height="97%"></div>
+                    <img src='action_loc_ucf50.jpg' alt="" width="165%" height="97%">
+                </div>                
+                <script type="text/javascript">
+                function ccc_start() {
+                  document.getElementById('ccc_image').style.opacity = "1";
+                }
+                function ccc_stop() {
+                  document.getElementById('ccc_image').style.opacity = "0";
+                }
+                ccc_stop()
+                </script>
+
+                  </td>
         <td valign="top" width="75%">
         <p><a href="pami_stsf.pdf">
   <papertitle>Reconstruction-free action inference from compressive imagers</papertitle></a><br>
@@ -158,11 +189,33 @@
          <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>(Impact factor: 5.781, <font color="red"><strong>Accepted on July 31, 2015</strong></font>)<br>
 <a href="supplementary_stsf.pdf">supplement</a> / <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7208864&tag=1">preprint</a> 
         <p></p>
+        <p>	Persistent surveillance from camera networks, such as at parking lots, UAVs, etc., often results in large amounts of video data, resulting in significant challenges for inference in terms of storage, communication and computation. Compressive cameras have emerged as a potential solution to deal with the data deluge issues in such applications. However, inference tasks such as action recognition require high quality features which implies reconstructing the original video data. Much work in compressive sensing (CS) theory is geared towards solving the reconstruction problem, where state-of-the-art methods are computationally intensive and provide low-quality results at high compression rates. Thus, reconstruction-free methods for inference are much desired. In this paper, we propose reconstruction-free methods for action recognition from compressive cameras at high compression ratios of 100 and above.  Recognizing actions directly from CS measurements requires features which are mostly nonlinear and thus not easily applicable. This leads us to search for such properties that are preserved in compressive measurements. To this end, we propose the use of spatio-temporal smashed filters, which are compressive domain versions of pixel-domain matched filters. We conduct experiments on publicly available databases  and show that one can obtain recognition rates that are comparable to the oracle method in uncompressed setup, even for high compression ratios.
+        <p></p>
         </a></p>
         </td>
+      </tr>
 
 
 
+
+<tr onmouseout="ccc_stop()" onmouseover="ccc_start()" >
+              <td valign="top" width="30%">
+
+                <div class="one">
+                    <div class="two" id = 'ccc_image'><img src='ccd_smashed_filter.jpg' alt="" width="165%" height="97%"></div>
+                    <img src='ccd_smashed_filter.jpg' alt="" width="165%" height="97%">
+                </div>                
+                <script type="text/javascript">
+                function ccc_start() {
+                  document.getElementById('ccc_image').style.opacity = "1";
+                }
+                function ccc_stop() {
+                  document.getElementById('ccc_image').style.opacity = "0";
+                }
+                ccc_stop()
+                </script>
+
+                  </td>
         <td valign="top" width="75%">
         <p><a href="Face_CCD2015.pdf">
   <papertitle>Reconstruction-free Inference on Compressive Measurements</papertitle></a><br>
@@ -170,20 +223,71 @@
          <a href="http://ollie-imac.cs.northwestern.edu/~ollie/CCD2015/"><em>4th IEEE Workshop on Computational Cameras and Displays (CCD)</a>, held in conjunction with IEEE CVPR, June 2015</em> <font color="red"><strong>(Best Paper Award)</strong></font><br>        
 <a href="CCDppt.pptx">Presentation</a>      
        <p></p>
-       </a></p>
+        <p>Spatial-multiplexing cameras have emerged as a promising
+alternative to classical imaging devices, often enabling
+acquisition of "more for less". One popular architecture for
+spatial multiplexing is the single-pixel camera (SPC), which
+acquires coded measurements of the scene with pseudorandom
+spatial masks. Significant theoretical developments
+over the past few years provide a means for reconstruction
+of the original imagery from coded measurements at sub-
+Nyquist sampling rates. Yet, accurate reconstruction generally
+requires high measurement rates and high signal-tonoise
+ratios. In this paper, we enquire if one can perform
+high-level visual inference problems (e.g. face recognition
+or action recognition) from compressive cameras without
+the need for image reconstruction. This is an interesting
+question since in many practical scenarios, our goals extend
+beyond image reconstruction. However, most inference
+tasks often require non-linear features and it is not clear
+how to extract such features directly from compressed measurements.
+In this paper, we show that one can extract nontrivial
+correlational features directly without reconstruction
+of the imagery. As a specific example, we consider the problem
+of face recognition beyond the visible spectrum e.g in
+the short-wave infra-red region (SWIR), where pixels are
+expensive. We base our framework on smashed filters which
+suggests that inner-products between high-dimensional signals
+can be computed in the compressive domain to a high
+degree of accuracy. We collect a new face image dataset
+of 30 subjects, obtained using an SPC. Using face recognition
+as an example, we show that one can indeed perform
+reconstruction-free inference with a very small loss of accuracy
+at very high compression ratios of 100 and more.
+        <p></p>
+        </a></p>
         </td>
+      </tr>
 
+<tr onmouseout="ccc_stop()" onmouseover="ccc_start()" >
+              <td valign="top" width="30%">
 
+                <div class="one">
+                    <div class="two" id = 'ccc_image'><img src='recurrence_tex.jpg' alt="" width="171%" height="100%"></div>
+                    <img src='recurrence_tex.jpg' alt="" width="171%" height="100%">
+                </div>                
+                <script type="text/javascript">
+                function ccc_start() {
+                  document.getElementById('ccc_image').style.opacity = "1";
+                }
+                function ccc_stop() {
+                  document.getElementById('ccc_image').style.opacity = "0";
+                }
+                ccc_stop()
+                </script>
 
+                  </td>
         <td valign="top" width="75%">
         <p><a href="CS_Activity_ICIP.pdf">
   <papertitle>Recurrence Textures for Activity Recognition from compressive cameras</papertitle></a><br>
           <strong>Kuldeep Kulkarni</strong>, <a href="https://pavanturaga.com">Pavan Turaga </a><br>
           <em>IEEE International Conference on Image Processing, 2012</em> <br>        
         <p></p>
+<p>Recent advances in camera architectures and associated mathematical representations now enable compressive acquisition of images and videos at low data-rates. In such a setting, we consider the problem of human activity recognition, which is an important inference problem in many security and surveillance applications. We propose a framework for understanding human activities as a non-linear dynamical system, and propose a robust, generalizable feature that can be extracted directly from the compressed measurements without recon-structing the original video frames. The proposed feature is termed recurrence texture and is motivated from recurrence analysis of non-linear dynamical systems. We show that it is possible to obtain discriminative features directly from the compressed stream and show its utility in recognition of activities at very low data rates.
+        <p></p>
         </a></p>
         </td>
-
+      </tr>
 
       </table>
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
