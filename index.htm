@@ -96,7 +96,24 @@
       </table>
       <table width="120%" align="center" border="0" cellspacing="0" cellpadding="20">
         
-      <tr> 
+      <tr onmouseout="dt_stop_1()" onmouseover="dt_start_1()" >
+          <td valign = "top" width="30%">
+            
+            <div class="one">
+                <div class="two" id = 'dt_image_1'><img src='wslhc.JPG' alt="" width="180%" height="100%"></div>
+                <img src='wslhc.JPG' alt="" width="180%" height="100%">
+            </div>                
+            <script type="text/javascript">
+            function dt_start_1() {
+              document.getElementById('dt_image_1').style.opacity = "1";
+            }
+            function dt_stop_1() {
+              document.getElementById('dt_image_1').style.opacity = "0";
+            }
+            dt_stop_1()
+            </script>
+      
+            </td>
       <td valign="top" width="100%">
               <a href="https://drive.google.com/file/d/1kqCbauwYCkd0F0SecX3pFeAp9y4Y74vQ/view?usp=sharing">
         <papertitle>SemIE: Semantically-aware Image Extrapolation</papertitle></a><br>
