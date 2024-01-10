@@ -99,6 +99,40 @@
       </tr>
       </table>
       <table width="120%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+     <tr onmouseout="contanimation_stop()" onmouseover="contanimation_start()">
+            <td valign = "top" width="30%">
+              <div class="one">
+                <div class="two" id='control_animation'><video  width=180% height=100% muted autoplay loop>
+                <source src="4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <video  width=180% height=100% muted autoplay loop>
+                <source src="5.mp4" type="video/mp4">
+              </div>
+              <script type="text/javascript">
+                function contanimation_start() {
+                  document.getElementById('control_animation').style.opacity = "1";
+                }
+
+                function contanimation_stop() {
+                  document.getElementById('control_animation').style.opacity = "0";
+                }
+                contanimation_stop()
+              </script>
+            </td>
+      <td valign="top" width="100%">
+              <a href="https://arxiv.org/abs/2303.08639">
+        <papertitle>Blowing in the Wind: CycleNet for Human Cinemagraphs from Still Images</papertitle></a><br>
+       <a href="https://hbertiche.github.io/">Hugo Bertiche</a>, <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/">Niloy J. Mitra</a>, <strong>Kuldeep Kulkarni</strong>, <a href="https://paulchhuang.wixsite.com/chhuang">Chun-Hao Paul Huang</a>, <a href="https://tuanfeng.github.io/">Tuanfeng Y. Wang</a>,<a href="https://scholar.google.com/citations?user=hWMXdg4AAAAJ&hl=en">Meysam Madadi</a>, <a href="https://sergioescalera.com/">Sergio Escalera</a>, <a href="https://www.duygu-ceylan.com//">Duygu Ceylan</a><br>
+         <em>Computer Vision and Pattern Recognition
+ (CVPR) 2023</a></em>
+                <br>
+                <a href="https://hbertiche.github.io/CycleNet/">Project Page</a>
+                <br>
+              </a>
+              </td>
+        </tr>
      
         <tr onmouseout="dt_stop_1()" onmouseover="dt_start_1()" >
           <td valign = "top" width="30%">
@@ -129,7 +163,7 @@
               </a>
               </td>
         </tr>
-        
+      
       <tr onmouseout="dt_stop_1()" onmouseover="dt_start_1()" >
           <td valign = "top" width="30%">
             
